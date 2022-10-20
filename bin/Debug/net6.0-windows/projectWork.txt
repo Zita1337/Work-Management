@@ -1,0 +1,21 @@
+0
+------------------
+#8/29/2022 12:00:00 AM
+$Create the budget
+%set the budget
+&Stuart Surname
+------------------
+1
+------------------
+#8/31/2022 12:00:00 AM
+$av
+%ngfdgnfg
+&Jo Walters
+------------------
+2
+------------------
+#9/23/2022 12:00:00 AM
+$thnthnrgnendf
+%erhegnteger
+&Johan Theron
+------------------

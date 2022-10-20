@@ -1,0 +1,48 @@
+0
+------------------
+#8/27/2022 12:00:00 AM
+^8/25/2022 6:58:41 PM
+$Clean floors
+%Clean the floors
+&Jan Van Middle
+------------------
+1
+------------------
+#9/1/2022 12:00:00 AM
+^8/25/2022 7:13:39 PM
+$Create the entire project
+%Create it
+&Stuart Surname
+------------------
+2
+------------------
+#9/1/2022 12:00:00 AM
+^8/25/2022 7:20:51 PM
+$Create cloud computing
+%Create the framework for cloud computing to be integrated
+&Jo Walters
+------------------
+3
+------------------
+#8/26/2022 12:00:00 AM
+^8/25/2022 7:29:49 PM
+$Do nothin
+%Stuart got this
+&Jo Walters
+------------------
+4
+------------------
+#8/26/2022 12:00:00 AM
+^8/25/2022 7:34:45 PM
+$Clean floors
+%Clean the floors on the second floor room 2
+&Jo Walters
+------------------
+5
+------------------
+#9/6/2022 12:00:00 AM
+^8/30/2022 12:20:09 PM
+$Doen taxes
+%Doen Erick se taxes
+&Johan Theron
+------------------

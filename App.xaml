@@ -1,0 +1,136 @@
+﻿<Application x:Class="CToDo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CToDo"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!-- Background Windows -->
+        <Style x:Key="backgroundWindow" TargetType="Window">
+            <Setter Property="Background" Value="#202225"/>
+        </Style>
+        
+        <!-- Background TextBox-->
+        <Style x:Key="backgroundTextBox" TargetType="TextBox">
+            <Setter Property="Background" Value="#202225"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                    <Setter Property="BorderBrush" Value="#25282B"/>
+                </Style>
+            </Style.Resources>
+        </Style>
+        
+        <!-- Background Buttons -->
+        <Style x:Key="backgroundButtons" TargetType="Button">
+            <Setter Property="Background" Value="#25282B"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Style.Resources>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#42464D"/>
+                    <Setter Property="Foreground" Value="Gray"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Panel Buttons -->
+        <Style x:Key="panelButtons" TargetType="Button">
+            <Setter Property="Background" Value="#36393F"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Style.Resources>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#42464D"/>
+                    <Setter Property="Foreground" Value="Gray"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="panelButtonsClicked" TargetType="Button">
+            <Setter Property="Background" Value="#464A52"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Style.Resources>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#42464D"/>
+                    <Setter Property="Foreground" Value="Gray"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Front Panel Buttons-->
+        <Style x:Key="frontPanelButtons" TargetType="Button">
+            <Setter Property="Background" Value="#36393F"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Style.Resources>
+
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#42464D"/>
+                    <Setter Property="Foreground" Value="Gray"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Panels -->
+        <Style x:Key="backgroundDckPanels" TargetType="DockPanel">
+            <Setter Property="Background" Value="#36393F"/>
+        </Style>
+        <Style x:Key="backgroundStckPanels" TargetType="StackPanel">
+            <Setter Property="Background" Value="#2F3136"/>
+        </Style>
+        <Style x:Key="frontPanel" TargetType="StackPanel">
+            <Setter Property="Background" Value="#484C54"/>
+        </Style>
+
+        <!-- ScrollViewers -->
+        <Style x:Key="backgroundscrlViewer" TargetType="ScrollViewer">
+            <Setter Property="Background" Value="#36393F"/>
+        </Style>
+        
+        <!-- TextBlocks -->
+        <Style x:Key="backgroundsTextblocks" TargetType="TextBlock">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+        <!-- Background RichTextBox -->
+        <Style x:Key="backgroundRichTextBox" TargetType="RichTextBox">
+            <Setter Property="Background" Value="#36393F"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                    <Setter Property="BorderThickness" Value="2"/>
+                    <Setter Property="BorderBrush" Value="#25282B"/>
+                </Style>
+            </Style.Resources>
+        </Style>
+        
+    </Application.Resources>
+</Application>

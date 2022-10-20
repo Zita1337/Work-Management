@@ -1,0 +1,69 @@
+﻿<Window x:Class="CToDo.EmployeeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CToDo"
+        mc:Ignorable="d"
+        Title="C To Do" Height="475" MinHeight="475" Width="800" MinWidth="450" Style="{StaticResource backgroundWindow}" Name="window" Closing="Window_Closing" Activated="Window_Activated" WindowStartupLocation="CenterScreen" SizeChanged="window_SizeChanged_1" StateChanged="Window_StateChanged_1">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <!-- TextBlocks -->
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="User" Name="txtUser" FontSize="15" VerticalAlignment="Bottom" Style="{StaticResource backgroundsTextblocks}"/>
+        <Button Grid.Row="1" Grid.Column="1" Width="auto" Content="Log out" HorizontalAlignment="Right" Click="Button_Click" Style="{StaticResource backgroundButtons}"/>
+
+        <!-- RichTextBox -->
+        <ScrollViewer Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" MinHeight="190" MaxWidth="179" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Name="scrlpnlUsers">
+            <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" MinHeight="190" Name="pnlShowUsers" CanVerticallyScroll="true" Style="{StaticResource backgroundStckPanels}"/>
+        </ScrollViewer>
+
+        <!-- Calender here -->
+        <Viewbox Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="1">
+            <Calendar HorizontalAlignment="Left" Name="cldShowDate" SelectionMode="MultipleRange"/>
+        </Viewbox>
+
+        <DockPanel Grid.Row="1" Grid.Column="4" Width="0" Height="35" Name="dckpnlShowBtn" Style="{StaticResource backgroundDckPanels}">
+            <Button Height="25" Width="50" Content="Busy" Name="pnlWorkBusyBtn" FontSize="15" Foreground="#DEDEDE" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" Click="pnlWorkBusyBtn_Click" Style="{StaticResource panelButtons}"/>
+            <Button Height="25" Width="80" Content="Completed" Name="pnlWorkCompBtn" FontSize="15" Foreground="#DEDEDE" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="1,0,0,0" Click="pnlWorkCompBtn_Click" Style="{StaticResource panelButtons}"/>
+        </DockPanel>
+
+        <!-- Work load panel -->
+        <ScrollViewer Grid.Row="2" Grid.RowSpan="2" Grid.Column="4" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Name="scrollboxBusy" HorizontalAlignment="Left" Style="{StaticResource backgroundscrlViewer}">
+            <DockPanel Name="pnlWork" HorizontalAlignment="Left">
+
+                <ScrollViewer VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Disabled" VerticalAlignment="Top">
+                    <Canvas Height="300" Width="0" Name="myCanvas" Background="Transparent" HorizontalAlignment="Left"/>
+                </ScrollViewer>
+
+            </DockPanel>
+        </ScrollViewer>
+
+
+        <!-- Completed works panel -->
+        <ScrollViewer Grid.Row="2" Grid.RowSpan="2" Grid.Column="4" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Name="scrollboxComplete" HorizontalAlignment="Left" Style="{StaticResource backgroundscrlViewer}" Visibility="Collapsed">
+            <DockPanel Name="pnlWorkComplete" HorizontalAlignment="Left">
+
+                <ScrollViewer VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Disabled"  HorizontalAlignment="Left">
+                    <Canvas Height="300" Width="0" Name="myCanvascomplete" Background="Transparent" HorizontalAlignment="Left"/>
+                </ScrollViewer>
+
+            </DockPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Window>
